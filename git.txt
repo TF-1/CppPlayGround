@@ -1,0 +1,7 @@
+git status
+git add
+git commit
+git checkout 
+git checkout -b "branch"
+git branch -a
+git log --oneline --graph --all --decorate 
