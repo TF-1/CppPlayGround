@@ -1,3 +1,6 @@
+git config --list
+git config --global user.name 
+git config --worktree user.name
 git status
 git add
 git commit
