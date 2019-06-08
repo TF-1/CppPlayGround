@@ -2,9 +2,11 @@
 //
 
 #include "stdafx.h"
+#include <iostream>
 
 #include "person.h"
 #include "contacts.h"
+#include "ChronoTest.h"
 
 person getPerson(int i)
 {
@@ -15,7 +17,7 @@ person getPerson(int i)
 	return person("John Doe", "church street 1", "000-123456");
 }
 
-int main()
+void Test1()
 {
 	std::cout << "Create on stack" << std::endl;
 	person p1("Rich", "main street 1", "000-123456");
@@ -41,6 +43,21 @@ int main()
 	std::cout << "Person 3: "; p3.print();
 
 	myContacts.print();
+}
+
+void Test2()
+{
+	ChronoTest chronoTest;
+	
+	chronoTest.test();
+}
+
+int main()
+{
+	Test2();
+
+	int i;
+	std::cin >> i;
 
     return 0;
 }
